@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000">
+
+
+    <Button
+        android:id="@+id/settingsbackbutton"
+        android:layout_width="385dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/gothambold"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/linkbutton"
+        android:layout_width="320dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/gothambold"
+        android:text="Connect to Spotify"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteaccountbutton"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/gothambold"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkbutton" />
+
+    <Button
+        android:id="@+id/signoutbutton"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/gothambold"
+        android:text="Sign Out"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteaccountbutton" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="46dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/gothambold"
+        android:text="Name:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changepasswordbutton" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="46dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gothambold"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/spotify_username"
+        android:layout_width="250dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/gothambold"
+        android:text="N/A"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/changepasswordbutton" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="250dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/gothambold"
+        android:text="N/A"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/emailtext"
+        app:layout_constraintTop_toBottomOf="@+id/spotify_username" />
+
+    <Button
+        android:id="@+id/changepasswordbutton"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/gothambold"
+        android:text="Change Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signoutbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
